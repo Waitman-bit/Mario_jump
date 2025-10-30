@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 100%;
+    height: 500px;
+    border-bottom: solid 15px #37db16;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#099ce0,#ffff);
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: Pipeanimation 2s infinite linear; 
+}
+
+.mario{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.clounds{
+    width: 500px;
+    position: absolute;
+    animation: cloundsanimation 20s infinite linear;
+    padding-top: 15px;
+}
+
+.jump{
+    animation: jump 500ms ease-out;
+}
+
+@keyframes Pipeanimation {
+   from {
+        right: -80px;
+   }
+   to {
+        right: 100%;
+   }
+}
+
+@keyframes jump {
+    0%{
+        bottom: 0;
+    }
+
+    40%{
+        bottom: 180px;
+    }
+
+
+    50%{
+        bottom: 180px;
+    }
+
+    60%{
+        bottom: 180px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+    
+}
+
+@keyframes cloundsanimation {
+   from {
+        right: -550px;
+   }
+   to {
+        right: 100%;
+   }
+}
+
+.game-over {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.game-over-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255,255,255,0.5);
+  animation: popup 0.3s ease;
+}
+
+.game-over-box h2 {
+  margin-bottom: 10px;
+  color: #e63946;
+}
+
+.game-over-box p {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#simBtn {
+  background-color: #06d6a0;
+  color: white;
+}
+
+#naoBtn {
+  background-color: #ef476f;
+  color: white;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes popup {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.title{
+    text-align: center;
+    padding-top: 170px;
+    background-image: url(tijolos.webp);
+    height: 450px;
+}
