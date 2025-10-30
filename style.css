@@ -6,7 +6,7 @@
 
 .game-board {
     width: 100%;
-    height: 500px;
+    height: 550px;
     border-bottom: solid 15px #37db16;
     margin: 0 auto;
     position: relative;
@@ -31,7 +31,7 @@
     width: 500px;
     position: absolute;
     animation: cloundsanimation 20s infinite linear;
-    padding-top: 15px;
+    padding-top: 25px;
 }
 
 .jump{
