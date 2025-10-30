@@ -1,0 +1,1 @@
+Um joguinho divertido feito em HTML, CSS e JavaScript, onde você controla o Mario e precisa pular os canos para não perder. Ao bater, aparece um pop-up perguntando se quer jogar de novo. Ideal para treinar lógica, animações e interatividade no front-end.
